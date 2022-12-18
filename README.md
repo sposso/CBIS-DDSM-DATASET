@@ -15,4 +15,7 @@ This script contains a function that retrieves the path of all mammograms in you
 ### mask_code.ipynb:
 This script contains a function that retrieves the path of all patches in your local machine and then merges each mask path with its pathology in a dataframe. This dataframe is subsequently  saved as csv file. Note: There are more masks than mammograms since some mammograms have more than one lesion.
 
+### convert_dicom.ipynb:
+The  images provided by CBIS-DDSM  (mammograms, masks, crops of abnormalities)  are saved in DICOM format. This function saves 16-bit mammogram from dicom as rescaled 16-bit png file.
+
 
