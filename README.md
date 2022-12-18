@@ -9,4 +9,7 @@ If you want to train a breast cancer classifier or a segmentation model using th
 
 Despite of [paper](https://www.nature.com/articles/sdata2017177) states that CBIDS-DDSM has 753 calcification cases and 891 mass cases, it is difficult to determine how many images actually this dataset has. According to the metadeta provided in the CSV files, CBIS-DDSM contains 3103 mammograms,  and 465 have more than one abnormality. 2.458 mamograms (79.21%) belong to the training set, and 645 (20.79% ) belong to the test set. Furthermore, 3568 cropped mammograms and 3568 masks are included.
 
-## A bit explanation of respository´s functions
+## A bit explanation of the respository´s functions
+### Mammograms_code:
+This script contains a function that retrieves the path of all mammograms in your local machine and then merges each image path with its pathology in a dataframe. This dataframe is subsequently  saved as csv file. 
+
