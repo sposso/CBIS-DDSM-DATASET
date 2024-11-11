@@ -20,7 +20,7 @@ The  images provided by CBIS-DDSM  (mammograms, masks, crops of abnormalities)  
 
 ### Original_Split.ipynb:
 
-This script is used to create the test and training set  according to the standardized split given by the official [paper](https://www.nature.com/articles/sdata2017177). The path of all images is stored in a dataframe which is saved as CSV file.
+This script is used to create the test and training set  according to the standardized split given by the official  [paper](https://www.nature.com/articles/sdata2017177). The path of all images is stored in a dataframe which is saved as CSV file.
 
 ### Bonus :
 In this [repository](https://github.com/sposso/Deep_learning_to_improve_breast_Cancer_pytorch), I implemented the deep learning classifier introduced in the [paper](https://www.nature.com/articles/s41598-019-48995-4)"Deep Learning to Improve Breast Cancer Detection on Screening Mammography" using PyTorch.  The original code and model are available [here](https://github.com/lishen/end2end-all-conv). However, this  code is in Keras.  
