@@ -36,7 +36,7 @@ As an Ubuntu Linux user, here’s a step-by-step guide to installing the NBIA Da
     /opt/nbia-data-retriever/bin/nbia-data-retriever --cli CBIS-DDSM-All-doiJNLP-zzWs5zfZ.tcia
 
     ```
-   📁 This command will begin downloading the dataset into folders containing the mammogram images and masks. If your .tcia file has a different name, update the command accordingly.
+      📁 This command will begin downloading the dataset into folders containing the mammogram images and masks. If your .tcia file has a different name, update the command accordingly.
 
 ### Additional information 
 To go into detail about the CBIS-DDSM dataset, you can check this [paper](https://www.nature.com/articles/sdata2017177). It describes how to use the dataset and how the dataset was built. 
