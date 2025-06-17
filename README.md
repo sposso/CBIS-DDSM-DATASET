@@ -2,7 +2,7 @@
 Suppose you want to train a breast cancer classifier or a segmentation model using the CBIS-DDSM dataset. In that case, this repository may help you to easily extract the mammograms and the masks from the original folder.
 
 ## Setup
-1. The dataset can be downloaded directly from the [official site](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=22516629).
+1. The dataset can be downloaded directly from the [official site](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=22516629)
 2.  To go into detail about the CBIS-DDSM dataset, you can check this [paper](https://www.nature.com/articles/sdata2017177). It describes how to use the dataset and how the dataset was built. 
 
 ## Quantitative Description
