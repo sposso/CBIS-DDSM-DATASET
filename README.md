@@ -1,13 +1,13 @@
 # CBIS-DDSM-DATASET
-If you want to train a breast cancer classifier or a segmentation model using the CBIS-DDSM  dataset, this repository may help you to easily extract the mammograms and the masks from the original folder.
+Suppose you want to train a breast cancer classifier or a segmentation model using the CBIS-DDSM dataset. In that case, this repository may help you to easily extract the mammograms and the masks from the original folder.
 
 ## Setup
 1. The dataset can be downloaded directly from the [official site](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=22516629).
-2.  If you want to go into detail about the CBIS-DDSM dataset, you can check this [paper](https://www.nature.com/articles/sdata2017177). It describes how to use the dataset and how the dataset was built. 
+2.  To go into detail about the CBIS-DDSM dataset, you can check this [paper](https://www.nature.com/articles/sdata2017177). It describes how to use the dataset and how the dataset was built. 
 
 ## Quantitative Description
 
-Despite the [paper](https://www.nature.com/articles/sdata2017177) stating that CBIDS-DDSM has 753 calcification cases and 891 mass cases, it is difficult to determine how many images this dataset actually has. According to the metadata provided in the CSV files, CBIS-DDSM contains 3103 mammograms, 465 of which have more than one abnormality. 2.458 (79.21%) of the mamograms belong to the training set, and 645 (20.79% ) of them belong to the test set. Furthermore, 3568 cropped mammograms and 3568 masks are included.
+Despite the [paper](https://www.nature.com/articles/sdata2017177) stating that CBIDS-DDSM has 753 calcification cases and 891 mass cases, it is difficult to determine how many images this dataset has. According to the metadata provided in the CSV files, CBIS-DDSM contains 3103 mammograms, 465 of which have more than one abnormality. 2.458 (79.21%) of the mammograms belong to the training set, and 645 (20.79% ) belong to the test set. Furthermore, the dataset includes 3,568 cropped mammograms along with their corresponding masks, which provide pixel-level annotations of abnormalities as identified by a radiologist.
 
 ## A bit of explanation of the repository's functions
 ### Mammograms_code.ipynb:
