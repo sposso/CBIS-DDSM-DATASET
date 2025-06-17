@@ -23,6 +23,10 @@ As an Ubuntu Linux user, here’s a step-by-step guide to installing the NBIA Da
 
    ```bash
    sudo dpkg -i nbia-data-retriever_4.4.3-1_amd64.deb
+
+   Take into account that you should replace _nbia-data-retriever_4.4.3-1_amd64.deb_ by the actual name of the installer you downloaded before.
+
+3. From the terminal, navigate to the directoy where the installer 
 3.  To go into detail about the CBIS-DDSM dataset, you can check this [paper](https://www.nature.com/articles/sdata2017177). It describes how to use the dataset and how the dataset was built. 
 
 ## Quantitative Description
