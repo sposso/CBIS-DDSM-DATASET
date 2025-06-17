@@ -3,7 +3,13 @@ Suppose you want to train a breast cancer classifier or a segmentation model usi
 
 ## Setup
 1. The dataset can be downloaded directly from the [official site](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=22516629)
-2.  To go into detail about the CBIS-DDSM dataset, you can check this [paper](https://www.nature.com/articles/sdata2017177). It describes how to use the dataset and how the dataset was built. 
+### Steps to download the data:
+  a. Click [here](https://wiki.cancerimagingarchive.net/display/NBIA/Version+4.4.3) to download the NBIA Data Retriever, a program that enables you to download the dataset.
+  b. As an Ubuntu Linux user, I will provide a step-by-step guide outlining the commands I use to download the dataset.
+    b.1 Click [here](https://github.com/CBIIT/NBIA-TCIA/releases/download/DR-4_4_3-TCIA-20240916-1/nbia-data-retriever_4.4.3-1_amd64.deb) to download the installer in your computer
+    b.2 Go to the folder where the installer was downloaded and run  this command `sudo -S dpkg -i nbia-data-retriever-4.4.3-1.deb`. Take into account that you should replace  nbia-        data-retriever-4.4.3-1.deb by the actual name of the installer you just downloaded. 
+  
+3.  To go into detail about the CBIS-DDSM dataset, you can check this [paper](https://www.nature.com/articles/sdata2017177). It describes how to use the dataset and how the dataset was built. 
 
 ## Quantitative Description
 
