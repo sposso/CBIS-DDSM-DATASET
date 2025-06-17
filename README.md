@@ -19,7 +19,7 @@ As an Ubuntu Linux user, here’s a step-by-step guide to installing the NBIA Da
 
 1. [Download the `.deb` installer](https://github.com/CBIIT/NBIA-TCIA/releases/download/DR-4_4_3-TCIA-20240916-1/nbia-data-retriever_4.4.3-1_amd64.deb) to your computer.
 
-2. Open a terminal, navigate to the download directory, and run the following command:
+2. Open a terminal, navigate to the directory that contains the .deb installer, and run the following command:
 
    ```bash
    sudo dpkg -i nbia-data-retriever_4.4.3-1_amd64.deb
