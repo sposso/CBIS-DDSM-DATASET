@@ -26,7 +26,7 @@ As an Ubuntu Linux user, here’s a step-by-step guide to installing the NBIA Da
 
     ``` 
 
-   Take into account that you should replace _nbia-data-retriever_4.4.3-1_amd64.deb_ by the actual name of the installer you downloaded before.
+   💡  Take into account that you should replace _nbia-data-retriever_4.4.3-1_amd64.deb_ by the actual name of the installer you downloaded before.
 
 3. [Download the `.tcia` file](https://www.cancerimagingarchive.net/wp-content/uploads/CBIS-DDSM-All-doiJNLP-zzWs5zfZ.tcia) that contains the mammograms to your computer.
 4. Open the terminal and navigate to the directory that contains the .tcia file, and run the following command:
@@ -36,7 +36,7 @@ As an Ubuntu Linux user, here’s a step-by-step guide to installing the NBIA Da
     /opt/nbia-data-retriever/bin/nbia-data-retriever --cli CBIS-DDSM-All-doiJNLP-zzWs5zfZ.tcia
 
     ```
-    CBIS-DDSM-All-doiJNLP-zzWs5zfZ.tcia is the file downloaded previously. If it has a different name, change it in the command. After run this command, all the folders with the mamograms will start to download .
+   📁 This command will begin downloading the dataset into folders containing the mammogram images and masks. If your .tcia file has a different name, update the command accordingly.
 
 ### Additional information 
 To go into detail about the CBIS-DDSM dataset, you can check this [paper](https://www.nature.com/articles/sdata2017177). It describes how to use the dataset and how the dataset was built. 
