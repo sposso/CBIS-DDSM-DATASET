@@ -45,7 +45,7 @@ To go into detail about the CBIS-DDSM dataset, you can check this [paper](https:
 
 Despite the [paper](https://www.nature.com/articles/sdata2017177) stating that CBIDS-DDSM has 753 calcification cases and 891 mass cases, it is difficult to determine how many images this dataset has. According to the metadata provided in the CSV files, CBIS-DDSM contains 3103 mammograms, 465 of which have more than one abnormality. 2.458 (79.21%) of the mammograms belong to the training set, and 645 (20.79% ) belong to the test set. Furthermore, the dataset includes 3,568 cropped mammograms along with their corresponding masks, which provide pixel-level annotations of abnormalities as identified by a radiologist.
 
-## A bit of explanation of the repository's functions
+## Repository Function Overview
 ### Mammograms_code.ipynb:
 This script contains a function that retrieves the path of all mammograms on your local machine and merges each image path with its pathology in a data frame. The dataframe is subsequently saved as a CSV file. 
 ### mask_code.ipynb:
