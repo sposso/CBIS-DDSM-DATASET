@@ -58,10 +58,15 @@ Each CSV file contains three columns:
    - `1` – Malignant Calcification  
    - `2` – Benign Calcification  
    - `3` – Malignant Mass  
-   - `4` – Benign Mass  
+   - `4` – Benign Mass
 
-
-### convert_dicom.ipynb:
+### `retrieval_utils.py`
+This script contains three functions: 
+   - **mam_data**: This function retrieves the path of all mammograms (3103) in your local machine.
+   - **mask_data**: This function retrieves the path of all masks (3568) in your local machine.
+   - **final_dataset**: This function merges the mammograms and masks dataframes based on the image id. It outputs two CSV files: one for the training set and one for the test set.
+    
+### `convert_dicom.ipynb`:
 The  images provided by CBIS-DDSM  (mammograms, masks, and crops of abnormalities)  are saved in DICOM format. This function saves a 16-bit mammogram from DICOM as a rescaled 16-bit PNG file.
 
 
