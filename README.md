@@ -52,7 +52,7 @@ Despite the [paper](https://www.nature.com/articles/sdata2017177) stating that C
 This script generates two CSV files: `training_dataset.csv` and `test_dataset.csv`. The data split follows the official partition provided by the dataset's authors.
 
 Each CSV file contains three columns:
-1. **Mammogram Path**: The local file path (path on your machine) to each mammogram image.
+1. **Mammogram Path**: The local file path (location your machine) to each mammogram image.
 2. **Mask Path**: The local file path of each annotation mask. Each mask is matched to its respective mammogram.
 3. **Label** : The classification label for each mammogram, defined as:
    - `1` – Malignant Calcification  
