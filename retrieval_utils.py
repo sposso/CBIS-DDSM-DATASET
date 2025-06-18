@@ -246,8 +246,11 @@ def final_dataset(csv_mask_path, csv_mam_path, output_path, delete_temp_csv=True
                 
         # Concatenate all dataframes for masks and mammograms
         final_mask_df = pd.concat(final_dfs['mask_set'], ignore_index=True)
+        final_mask_df = final_mask_df.drop(columns=['pathology'], errors='ignore') 
         final_mam_df = pd.concat(final_dfs['mam_set'], ignore_index=True)
-        
+        final_mam_df = final_mam_df.drop(columns=['pathology'], errors='ignore') 
+        print(f"Number of masks in {s} set: {len(final_mask_df)}")
+        print(f"Number of mammograms in {s} set: {len(final_mam_df)}")
 
         # We will use the name of the images as the merge criteria  to merge the mask and mammogram dataframes.
         
@@ -263,10 +266,7 @@ def final_dataset(csv_mask_path, csv_mam_path, output_path, delete_temp_csv=True
         
         # Drop columns that are either redundant or were only used for merging and are not needed in the final output
         merged_df = merged_df.drop(columns=['img', 'merge_key', 'label_mam'])
-        
-        # Change the order of the columns 
-        
-        merged_df = merged_df[['img_path', 'roi_path', 'label']]
+
         
         # Save the final merged dataframe to a CSV file
         

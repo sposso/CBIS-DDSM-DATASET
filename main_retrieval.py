@@ -1,6 +1,7 @@
 
 from retrieval_utils import mam_data,mask_data, final_dataset
 import os
+import pandas as pd
 
 #directory that contains the  orginal dataset
 
@@ -15,14 +16,19 @@ img_root = '/home/sposso22/work/shared_data/breast_cancer/RAW_CBIS-DDSM'
 
 csv_root = '/home/sposso22/work/shared_data/breast_cancer/metadata_RAW_CBIS_DDSM'
 
-mask_info = mam_data(img_root, csv_root)
+csv_mam_path = mam_data(img_root, csv_root)
 
-mammo_info = mask_data(img_root, csv_root)
+csv_mask_path = mask_data(img_root, csv_root)
 
-
-# The final training and test dataset will be saved in the current working directory
-output_path = os.getcwd()
-
-final_dataset(mask_info, mammo_info, output_path)
+output_path = os.path.join(os.getcwd(), 'final_datasets')
+if not os.path.exists(output_path):
+    os.makedirs(output_path)
 
 
+# Create the final dataset by merging the mask and mammogram dataframes
+final_dataset(csv_mask_path, csv_mam_path, output_path)
+    
+    
+
+
+# %%
